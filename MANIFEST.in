@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include mobiwork_dms_integrations *.css
+recursive-include mobiwork_dms_integrations *.csv
+recursive-include mobiwork_dms_integrations *.html
+recursive-include mobiwork_dms_integrations *.ico
+recursive-include mobiwork_dms_integrations *.js
+recursive-include mobiwork_dms_integrations *.json
+recursive-include mobiwork_dms_integrations *.md
+recursive-include mobiwork_dms_integrations *.png
+recursive-include mobiwork_dms_integrations *.py
+recursive-include mobiwork_dms_integrations *.svg
+recursive-include mobiwork_dms_integrations *.txt
+recursive-exclude mobiwork_dms_integrations *.pyc
