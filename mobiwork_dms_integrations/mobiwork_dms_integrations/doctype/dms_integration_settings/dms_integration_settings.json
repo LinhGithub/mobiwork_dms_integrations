@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 14:04:34.319016",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url_site_dms",
+  "column_break_rox1l",
+  "authen_key",
+  "section_break_xzg5i",
+  "wh_item",
+  "wh_customer",
+  "wh_order",
+  "column_break_vgrq7",
+  "id_wh_item_cu",
+  "id_wh_item_d",
+  "id_wh_customer_cu",
+  "id_wh_customer_d",
+  "id_wh_order_cu",
+  "id_wh_order_d",
+  "check_doc",
+  "section_break_wrk9c",
+  "note_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_rox1l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authen_key",
+   "fieldtype": "Data",
+   "label": "Authentication key",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "description": "Open/Close Webhook Item",
+   "fieldname": "wh_item",
+   "fieldtype": "Check",
+   "label": "Webhook Item"
+  },
+  {
+   "default": "0",
+   "description": "Open/Close Webhook Customer",
+   "fieldname": "wh_customer",
+   "fieldtype": "Check",
+   "label": "Webhook Customer"
+  },
+  {
+   "default": "0",
+   "description": "Open/Close Webhook Order",
+   "fieldname": "wh_order",
+   "fieldtype": "Check",
+   "label": "Webhook Order"
+  },
+  {
+   "fieldname": "section_break_xzg5i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "id_wh_item_cu",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Item Create/Update",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_wh_item_d",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Item Delete",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_wh_customer_cu",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Customer Create/Update",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_wh_customer_d",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Customer Delete",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_wh_order_cu",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Order Create/Update",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id_wh_order_d",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID Webhook Order Delete",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vgrq7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Example: https://mobiwork.com",
+   "fieldname": "url_site_dms",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL Site DMS",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "check_doc",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Check Doc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_wrk9c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note_html",
+   "fieldtype": "HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-09-26 14:22:18.597730",
+ "modified_by": "Administrator",
+ "module": "Mobiwork DMS Integrations",
+ "name": "DMS Integration Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,36 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"YR9rGlcZE1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Integrations</span>\",\"col\":12}},{\"id\":\"y7tPXh7Je4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"DMS Integration Settings\",\"col\":3}}]",
+ "creation": "2023-09-21 14:11:26.576777",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "integration",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "DMS Integrations",
+ "links": [],
+ "modified": "2023-09-21 15:40:23.379515",
+ "modified_by": "Administrator",
+ "module": "Mobiwork DMS Integrations",
+ "name": "DMS Integrations",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "DMS Integration Settings",
+   "link_to": "DMS Integration Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "DMS Integrations"
+}
