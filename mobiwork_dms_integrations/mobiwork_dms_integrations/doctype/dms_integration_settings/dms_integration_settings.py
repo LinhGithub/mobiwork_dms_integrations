@@ -71,9 +71,9 @@ class DMSIntegrationSettings(Document):
     @frappe.whitelist()
     def handle_webhook(self, webhook_data):
         try:
-            progress = 0 / 3 * 100
-            publish_progress(
-                percent=progress, title="Installing Webhooks..", description="Please wait")
+            # progress = 0 / 3 * 100
+            # publish_progress(
+            #     percent=progress, title="Installing Webhooks..", description="Please wait")
 
             # webhook Item
             if self.wh_item == 1:
@@ -197,11 +197,13 @@ class DMSIntegrationSettings(Document):
                     self.id_wh_order_d = id_wh_order_d
                 else:
                     self.update_doctype(
-                        "Webhook", self.id_wh_order_cu, {"enabled": 1})
+                        "Webhook", self.id_wh_order_d, {"enabled": 1})
                     self.insert_header_data(
-                        self.id_wh_order_cu, order_fields)
+                        self.id_wh_order_d, order_fields)
 
             else:
+                print("=========", '0000000000000')
+
                 self.update_doctype(
                     "Webhook", self.id_wh_order_cu, {"enabled": 0})
                 self.update_doctype(
@@ -213,6 +215,7 @@ class DMSIntegrationSettings(Document):
 
             return True
         except Exception as err:
+            print("=========", err)
             return False
 
     def on_update(self):

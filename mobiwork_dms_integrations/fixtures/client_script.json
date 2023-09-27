@@ -4,10 +4,10 @@
   "doctype": "Client Script",
   "dt": "Sales Order",
   "enabled": 1,
-  "modified": "2023-09-22 10:39:14.354215",
+  "modified": "2023-09-27 08:41:26.646871",
   "module": "Mobiwork DMS Integrations",
   "name": "Script Show Field In Sales Order",
-  "script": "frappe.ui.form.on('Sales Order', {\n    refresh: function(frm) {\n        var html = `<div>Preview Link DMS:</div>`;\n        if(frm.doc.custom_link_dms)\n            html = `<div>Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n    },\n    \n\tcustom_link_dms: function(frm) {\n\t    var html = `<div>Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n\t}\n})",
+  "script": "frappe.ui.form.on('Sales Order', {\n    refresh: function(frm) {\n        var html = `<div class=\"mb-2\">Preview Link DMS:</div>`;\n        if(frm.doc.custom_link_dms)\n            html = `<div class=\"mb-2\">Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n    },\n    \n\tcustom_link_dms: function(frm) {\n\t    var html = `<div class=\"mb-2\">Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n\t}\n})",
   "view": "Form"
  },
  {
@@ -15,10 +15,10 @@
   "doctype": "Client Script",
   "dt": "Customer",
   "enabled": 1,
-  "modified": "2023-09-22 10:38:12.883059",
+  "modified": "2023-09-27 08:41:12.379121",
   "module": "Mobiwork DMS Integrations",
   "name": "Script Show Field in Customer",
-  "script": "frappe.ui.form.on('Customer', {\n    refresh: function(frm) {\n        var html = `<div>Preview Link DMS:</div>`;\n        if(frm.doc.custom_link_dms)\n            html = `<div>Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n    },\n    \n\tcustom_link_dms: function(frm) {\n\t    var html = `<div>Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n\t}\n})",
+  "script": "frappe.ui.form.on('Customer', {\n    refresh: function(frm) {\n        var html = `<div class=\"mb-2\">Preview Link DMS:</div>`;\n        if(frm.doc.custom_link_dms)\n            html = `<div class=\"mb-2\">Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n    },\n    \n\tcustom_link_dms: function(frm) {\n\t    var html = `<div class=\"mb-2\">Preview Link DMS: <a class='text-primary' href='${frm.doc.custom_link_dms}' target=\"_blank\">${frm.doc.custom_link_dms}</a></div>`;\n        $(frm.fields_dict.custom_link_html.wrapper).html(html);\n\t}\n})",
   "view": "Form"
  }
 ]
